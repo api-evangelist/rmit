@@ -1,0 +1,83 @@
+---
+aid: rmit
+name: RMIT University
+description: >-
+  RMIT University is a public research university in Melbourne, Australia,
+  specializing in technology, design and enterprise, and ranked #123 in the
+  QS World University Rankings 2025. RMIT does not operate a centralized,
+  publicly documented developer portal. Its most accessible programmatic
+  surface is its research output: the RMIT Research Repository runs on
+  Clarivate's Esploro platform, and RMIT's research data is published via a
+  Figshare-hosted repository whose records are exposed through the public
+  Figshare REST API (api.figshare.com) and syndicated to Research Data
+  Australia. Student-facing systems such as timetables, the curriculum
+  catalogue, and identity/SSO sit behind authentication and are not offered
+  as public APIs.
+type: Index
+position: Consumer
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/rmit/refs/heads/main/apis.yml
+tags:
+  - Education
+  - Higher Education
+  - University
+  - Research Data
+  - Open Access
+  - Australia
+created: '2026-06-03'
+modified: '2026-06-03'
+specificationVersion: '0.19'
+apis:
+  - aid: rmit:figshare-api
+    name: RMIT Research Data (Figshare REST API)
+    description: >-
+      RMIT University's research data, publications and non-traditional
+      research outputs are published to a Figshare-hosted institutional
+      repository. The publicly accessible records are queryable through the
+      shared Figshare REST API v2 (api.figshare.com), which returns RMIT
+      article and dataset metadata as JSON. This is a third-party Figshare
+      platform API, not an RMIT-operated endpoint.
+    humanURL: https://rmit.figshare.com/
+    baseURL: https://api.figshare.com/v2
+    tags: [ Research Data, Open Access, Figshare, Repository ]
+    properties:
+      - type: Documentation
+        url: https://docs.figshare.com/
+      - type: Documentation
+        url: https://rmit.figshare.com/
+  - aid: rmit:research-repository
+    name: RMIT Research Repository (Esploro)
+    description: >-
+      The RMIT Research Repository is RMIT University's open access research
+      portal, powered by Clarivate's Esploro research information management
+      platform. It provides public web-based discovery of RMIT publications
+      and research outputs. Esploro supports metadata harvesting integrations,
+      but RMIT does not publish a documented public API or open OAI-PMH
+      endpoint for the portal.
+    humanURL: https://researchrepository.rmit.edu.au/
+    tags: [ Research Repository, Open Access, Esploro, Clarivate ]
+    properties:
+      - type: Documentation
+        url: https://researchrepository.rmit.edu.au/
+common:
+  - type: Website
+    url: https://www.rmit.edu.au/
+  - type: GitHub
+    url: https://github.com/RMIT-University
+  - type: LinkedIn
+    url: https://www.linkedin.com/school/rmit-university/
+  - type: Twitter
+    url: https://twitter.com/RMIT
+  - type: Plans
+    url: plans/rmit-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/rmit-rate-limits.yml
+  - type: FinOps
+    url: finops/rmit-finops.yml
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+---
