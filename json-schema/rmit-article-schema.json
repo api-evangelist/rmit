@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/rmit/main/json-schema/rmit-article-schema.json",
+  "title": "Figshare Article",
+  "description": "A public research output (article / dataset / thesis etc.) record as returned by the Figshare REST API v2, the platform backing the RMIT-hosted Figshare repository (rmit.figshare.com). Derived from the Article schema in https://docs.figshare.com/swagger.json.",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "doi",
+    "handle",
+    "url",
+    "url_public_html",
+    "url_public_api",
+    "defined_type",
+    "defined_type_name",
+    "timeline",
+    "thumb"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Unique identifier for article",
+      "examples": [1434614]
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of article",
+      "examples": ["Test article title"]
+    },
+    "doi": {
+      "type": "string",
+      "description": "DOI",
+      "examples": ["10.6084/m9.figshare.1434614"]
+    },
+    "handle": {
+      "type": "string",
+      "description": "Handle",
+      "examples": ["111184/figshare.1234"]
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "API endpoint for article"
+    },
+    "url_public_html": {
+      "type": "string",
+      "format": "uri",
+      "description": "Public site endpoint for article"
+    },
+    "url_public_api": {
+      "type": "string",
+      "format": "uri",
+      "description": "Public API endpoint for article"
+    },
+    "url_private_html": {
+      "type": "string",
+      "format": "uri",
+      "description": "Private site endpoint for article"
+    },
+    "url_private_api": {
+      "type": "string",
+      "format": "uri",
+      "description": "Private API endpoint for article"
+    },
+    "defined_type": {
+      "type": "integer",
+      "description": "Type of article identifier",
+      "examples": [3]
+    },
+    "defined_type_name": {
+      "type": "string",
+      "description": "Name of the article type identifier",
+      "examples": ["dataset", "media", "thesis"]
+    },
+    "thumb": {
+      "type": "string",
+      "format": "uri",
+      "description": "Thumbnail image"
+    },
+    "resource_doi": {
+      "type": "string",
+      "description": "Deprecated by related materials. In a publisher case, the publisher article DOI."
+    },
+    "resource_title": {
+      "type": "string",
+      "description": "Deprecated by related materials. In a publisher case, the publisher article title."
+    },
+    "timeline": {
+      "type": "object",
+      "description": "Important dates in the lifecycle of the article",
+      "properties": {
+        "posted": { "type": "string", "description": "Posted date" },
+        "firstOnline": { "type": "string", "description": "First online date" },
+        "revision": { "type": "string", "description": "Revision date" },
+        "submission": { "type": "string", "description": "Submission date" },
+        "publisherPublication": { "type": "string", "description": "Publisher publication date" },
+        "publisherAcceptance": { "type": "string", "description": "Publisher acceptance date" }
+      }
+    }
+  },
+  "additionalProperties": true
+}

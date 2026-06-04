@@ -1,0 +1,57 @@
+vocabulary:
+  name: RMIT Research Data (Figshare) Vocabulary
+  description: >-
+    Controlled vocabulary of the core terms used by the Figshare REST API v2
+    that backs the RMIT-hosted Figshare institutional repository
+    (rmit.figshare.com). Terms are drawn from the real Article, Author,
+    Category, File and search schemas of the Figshare API.
+  version: "1.0.0"
+  terms:
+    - term: Article
+      definition: >-
+        A single research output record (dataset, figure, media, thesis,
+        preprint, software, etc.) published to the Figshare repository.
+      tags: [object, articles]
+    - term: defined_type_name
+      definition: >-
+        Human-readable name of an article's type, e.g. dataset, media, thesis,
+        preprint, software, presentation, poster.
+      tags: [field, articles, taxonomy]
+    - term: doi
+      definition: Digital Object Identifier minted for an article or collection.
+      tags: [field, identifier]
+    - term: handle
+      definition: Handle.net persistent identifier assigned to a record.
+      tags: [field, identifier]
+    - term: Author
+      definition: A contributor credited on an article, optionally carrying an ORCID.
+      tags: [object, authors]
+    - term: orcid_id
+      definition: Open Researcher and Contributor ID for an author.
+      tags: [field, authors, identifier]
+    - term: Category
+      definition: >-
+        A subject classification (e.g. an ANZSRC field of research) assigned to
+        an article, organized in a parent/child taxonomy.
+      tags: [object, common, taxonomy]
+    - term: PublicFile
+      definition: >-
+        A downloadable file attached to a public article, including md5
+        checksums, size and a download URL.
+      tags: [object, files]
+    - term: institution
+      definition: >-
+        Numeric Figshare institution identifier used to scope searches to a
+        single organization's repository, such as RMIT University.
+      tags: [field, search, common]
+    - term: search_for
+      definition: Free-text search term passed to the articles/collections search endpoints.
+      tags: [field, search, common]
+    - term: timeline
+      definition: >-
+        Set of lifecycle dates for a record (posted, firstOnline, revision,
+        submission, publisher publication/acceptance).
+      tags: [object, articles, dates]
+    - term: license
+      definition: The reuse license assigned to an article (id, name and URL).
+      tags: [object, articles, licensing]

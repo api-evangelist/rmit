@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "rmit": "https://rmit.figshare.com/vocab#",
+    "datacite": "http://purl.org/spar/datacite/",
+
+    "RmitUniversity": "schema:CollegeOrUniversity",
+    "name": "schema:name",
+    "url": "schema:url",
+    "sameAs": "schema:sameAs",
+
+    "Article": "schema:Dataset",
+    "id": "schema:identifier",
+    "title": "schema:name",
+    "description": "schema:description",
+    "doi": {
+      "@id": "datacite:doi",
+      "@type": "@id"
+    },
+    "handle": "datacite:hasIdentifier",
+    "url_public_html": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "url_public_api": {
+      "@id": "schema:contentUrl",
+      "@type": "@id"
+    },
+    "defined_type_name": "schema:additionalType",
+    "published_date": {
+      "@id": "schema:datePublished",
+      "@type": "schema:Date"
+    },
+    "tags": "schema:keywords",
+    "keywords": "schema:keywords",
+    "license": {
+      "@id": "schema:license",
+      "@type": "@id"
+    },
+    "version": "schema:version",
+    "citation": "schema:citation",
+
+    "categories": "schema:about",
+    "Category": "schema:DefinedTerm",
+
+    "authors": "schema:author",
+    "Author": "schema:Person",
+    "full_name": "schema:name",
+    "first_name": "schema:givenName",
+    "last_name": "schema:familyName",
+    "orcid_id": {
+      "@id": "schema:identifier",
+      "@type": "@id"
+    },
+
+    "files": "schema:distribution",
+    "PublicFile": "schema:DataDownload",
+    "download_url": {
+      "@id": "schema:contentUrl",
+      "@type": "@id"
+    },
+    "size": "schema:contentSize",
+    "mimetype": "schema:encodingFormat"
+  },
+  "@type": "RmitUniversity",
+  "name": "RMIT University",
+  "url": "https://www.rmit.edu.au/",
+  "sameAs": [
+    "https://rmit.figshare.com/",
+    "https://researchrepository.rmit.edu.au/",
+    "https://github.com/RMIT-University",
+    "https://www.linkedin.com/school/rmit-university/"
+  ]
+}

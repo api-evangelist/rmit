@@ -1,0 +1,39 @@
+{
+  "description": "Example request/response for POST https://api.figshare.com/v2/articles/search filtered to the RMIT institution. Request body fields and response item shape match the ArticleSearch and Article schemas of the Figshare REST API v2.",
+  "request": {
+    "method": "POST",
+    "url": "https://api.figshare.com/v2/articles/search",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "search_for": "climate",
+      "institution": 2000013,
+      "item_type": 3,
+      "order": "published_date",
+      "order_direction": "desc",
+      "page": 1,
+      "page_size": 10
+    }
+  },
+  "response": [
+    {
+      "id": 1434614,
+      "title": "Example RMIT research dataset",
+      "doi": "10.6084/m9.figshare.1434614",
+      "handle": "",
+      "url": "https://api.figshare.com/v2/articles/1434614",
+      "url_public_html": "https://rmit.figshare.com/articles/dataset/Example_RMIT_research_dataset/1434614",
+      "url_public_api": "https://api.figshare.com/v2/articles/1434614",
+      "timeline": {
+        "posted": "2024-03-11T00:00:00",
+        "firstOnline": "2024-03-11T00:00:00"
+      },
+      "thumb": "https://ndownloader.figshare.com/files/123456789/preview/12345678/thumb.png",
+      "defined_type": 3,
+      "defined_type_name": "dataset",
+      "group_id": 2000013,
+      "published_date": "2024-03-11T00:00:00Z"
+    }
+  ]
+}

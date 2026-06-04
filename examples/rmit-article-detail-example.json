@@ -1,0 +1,60 @@
+{
+  "description": "Example response for GET https://api.figshare.com/v2/articles/{article_id}. Shape matches the ArticleComplete schema (Article plus authors, files, custom_fields) of the Figshare REST API v2.",
+  "request": {
+    "method": "GET",
+    "url": "https://api.figshare.com/v2/articles/1434614"
+  },
+  "response": {
+    "id": 1434614,
+    "title": "Example RMIT research dataset",
+    "doi": "10.6084/m9.figshare.1434614",
+    "handle": "",
+    "url": "https://api.figshare.com/v2/articles/1434614",
+    "url_public_html": "https://rmit.figshare.com/articles/dataset/Example_RMIT_research_dataset/1434614",
+    "url_public_api": "https://api.figshare.com/v2/articles/1434614",
+    "figshare_url": "https://rmit.figshare.com/articles/dataset/Example_RMIT_research_dataset/1434614",
+    "defined_type": 3,
+    "defined_type_name": "dataset",
+    "doi_url": "https://doi.org/10.6084/m9.figshare.1434614",
+    "is_public": true,
+    "version": 1,
+    "size": 69939,
+    "status": "public",
+    "description": "An example dataset record illustrating the public Article payload.",
+    "citation": "Author, A. (2024): Example RMIT research dataset. RMIT University. Dataset.",
+    "tags": ["climate", "open data"],
+    "keywords": ["climate", "open data"],
+    "categories": [
+      { "id": 11, "title": "Atmospheric Sciences", "parent_id": 10, "path": "/450/1024/6532", "source_id": "300204", "taxonomy_id": 4 }
+    ],
+    "license": { "value": 1, "name": "CC BY 4.0", "url": "https://creativecommons.org/licenses/by/4.0/" },
+    "timeline": {
+      "posted": "2024-03-11T00:00:00",
+      "firstOnline": "2024-03-11T00:00:00"
+    },
+    "authors": [
+      {
+        "id": 97657,
+        "full_name": "Jane Researcher",
+        "first_name": "Jane",
+        "last_name": "Researcher",
+        "is_active": true,
+        "url_name": "Jane_Researcher",
+        "orcid_id": "0000-0001-2345-6789"
+      }
+    ],
+    "files": [
+      {
+        "id": 3000002,
+        "name": "dataset.csv",
+        "size": 14848,
+        "is_link_only": false,
+        "download_url": "https://ndownloader.figshare.com/files/3000002",
+        "supplied_md5": "043a51806d646e88cafbf19e7b82846f",
+        "computed_md5": "043a51806d646e88cafbf19e7b82846f",
+        "mimetype": "text/csv"
+      }
+    ],
+    "custom_fields": []
+  }
+}

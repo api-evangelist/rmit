@@ -1,0 +1,53 @@
+rules:
+  rmit-figshare-info-contact:
+    description: API info object should provide a contact for the Figshare-backed RMIT repository.
+    severity: warn
+    given: $.info
+    then:
+      field: contact
+      function: truthy
+
+  rmit-figshare-servers-https:
+    description: All server URLs must use HTTPS (api.figshare.com is HTTPS-only).
+    severity: error
+    given: $.servers[*].url
+    then:
+      function: pattern
+      functionOptions:
+        match: "^https://"
+
+  rmit-figshare-article-id-integer:
+    description: Article identifiers are integers across the Figshare API.
+    severity: warn
+    given: $.components.schemas.Article.properties.id
+    then:
+      field: type
+      function: pattern
+      functionOptions:
+        match: "^integer$"
+
+  rmit-figshare-url-fields-format:
+    description: Public URL fields on Article objects should declare a url/uri format.
+    severity: info
+    given: $.components.schemas.Article.properties[?(@property.match(/^url/))]
+    then:
+      field: format
+      function: truthy
+
+  rmit-figshare-operation-tags:
+    description: Every operation should be tagged so endpoints group by Figshare resource (articles, collections, etc.).
+    severity: warn
+    given: $.paths[*][get,post,put,delete]
+    then:
+      field: tags
+      function: truthy
+
+  rmit-figshare-search-pagination:
+    description: Search request bodies should support page/page_size pagination as defined by CommonSearch.
+    severity: info
+    given: $.components.schemas.CommonSearch.properties
+    then:
+      - field: page
+        function: truthy
+      - field: page_size
+        function: truthy

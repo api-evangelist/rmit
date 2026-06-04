@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/rmit/main/json-structure/rmit-article-structure.json",
+  "name": "RmitFigshareArticle",
+  "description": "JSON Structure for a public Figshare article record backing the RMIT-hosted Figshare repository (rmit.figshare.com). Modeled from the Article object of the Figshare REST API v2.",
+  "type": "object",
+  "properties": {
+    "id": { "type": "int64", "description": "Unique identifier for article" },
+    "title": { "type": "string", "description": "Title of article" },
+    "doi": { "type": "string", "description": "DOI" },
+    "handle": { "type": "string", "description": "Handle" },
+    "url": { "type": "uri", "description": "API endpoint for article" },
+    "url_public_html": { "type": "uri", "description": "Public site endpoint for article" },
+    "url_public_api": { "type": "uri", "description": "Public API endpoint for article" },
+    "defined_type": { "type": "int32", "description": "Numeric article type identifier" },
+    "defined_type_name": { "type": "string", "description": "Name of the article type identifier" },
+    "thumb": { "type": "uri", "description": "Thumbnail image" },
+    "timeline": {
+      "type": "object",
+      "description": "Important dates in the lifecycle of the article",
+      "properties": {
+        "posted": { "type": "string" },
+        "firstOnline": { "type": "string" },
+        "revision": { "type": "string" },
+        "submission": { "type": "string" }
+      }
+    }
+  },
+  "required": ["id", "title", "doi", "handle", "url", "defined_type", "defined_type_name"]
+}

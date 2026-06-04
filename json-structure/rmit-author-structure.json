@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/rmit/main/json-structure/rmit-author-structure.json",
+  "name": "RmitFigshareAuthor",
+  "description": "JSON Structure for an author of a public Figshare article in the RMIT-hosted Figshare repository. Modeled from the Author object of the Figshare REST API v2.",
+  "type": "object",
+  "properties": {
+    "id": { "type": "int64", "description": "Author id" },
+    "full_name": { "type": "string", "description": "Author full name" },
+    "first_name": { "type": "string", "description": "Author first name" },
+    "last_name": { "type": "string", "description": "Author last name" },
+    "is_active": { "type": "boolean", "description": "True if author has published items" },
+    "url_name": { "type": "string", "description": "Author url name" },
+    "orcid_id": { "type": "string", "description": "Author ORCID" }
+  },
+  "required": ["id", "full_name", "first_name", "last_name", "url_name", "orcid_id"]
+}

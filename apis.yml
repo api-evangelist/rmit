@@ -46,6 +46,26 @@ apis:
         url: https://docs.figshare.com/
       - type: Documentation
         url: https://rmit.figshare.com/
+      - type: OpenAPI
+        url: openapi/rmit-figshare-api.yaml
+      - type: JSONSchema
+        url: json-schema/rmit-article-schema.json
+      - type: JSONSchema
+        url: json-schema/rmit-author-schema.json
+      - type: x-json-structure
+        url: json-structure/rmit-article-structure.json
+      - type: x-json-structure
+        url: json-structure/rmit-author-structure.json
+      - type: x-examples
+        url: examples/rmit-articles-search-example.json
+      - type: x-examples
+        url: examples/rmit-article-detail-example.json
+      - type: x-rules
+        url: rules/rmit-rules.yml
+      - type: x-vocabulary
+        url: vocabulary/rmit-vocabulary.yml
+      - type: x-json-ld
+        url: json-ld/rmit-context.jsonld
   - aid: rmit:research-repository
     name: RMIT Research Repository (Esploro)
     description: >-
