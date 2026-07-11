@@ -81,6 +81,10 @@ apis:
       - type: Documentation
         url: https://researchrepository.rmit.edu.au/
 common:
+  - type: Authentication
+    url: authentication/rmit-authentication.yml
+  - type: OAuthScopes
+    url: scopes/rmit-scopes.yml
   - type: Website
     url: https://www.rmit.edu.au/
   - type: GitHub
@@ -97,6 +101,8 @@ common:
     url: finops/rmit-finops.yml
   - type: Review
     url: review.yml
+  - url: https://www.rmit.edu.au/news/all-news
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
