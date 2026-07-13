@@ -1,0 +1,14 @@
+{
+  "repo": "rmit",
+  "feeds": [
+    {
+      "source": "https://www.rmit.edu.au/news/all-news",
+      "feed_url": "https://www.rmit.edu.au/news/all-news",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 8
+}
