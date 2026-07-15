@@ -81,6 +81,8 @@ apis:
       - type: Documentation
         url: https://researchrepository.rmit.edu.au/
 common:
+  - type: AgenticAccess
+    url: agentic-access/rmit-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/rmit-vulnerability-disclosure.yml
   - type: DomainSecurity
