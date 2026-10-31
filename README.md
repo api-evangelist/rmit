@@ -1,4 +1,4 @@
-# RMIT University (rmit)
+# RMIT University
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,52 +64,130 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-RMIT University is a public research university in Melbourne, Australia, focused on technology, design and enterprise, and ranked #123 in the QS World University Rankings 2025. This repository catalogs RMIT's public developer/API footprint as an APIs.json profile. RMIT does not run a centralized developer portal; its most accessible programmatic surface is research output published via a Figshare-hosted repository (queryable through the public Figshare REST API) and a Clarivate Esploro research repository for discovery.
+RMIT University is a public research university in Melbourne, Australia, specializing in technology, design and enterprise, and ranked #123 in the QS World University Rankings 2025. RMIT does not operate a centralized, publicly documented developer portal. Its most accessible programmatic surface is its research output: the RMIT Research Repository runs on Clarivate's Esploro platform, and RMIT's research data is published via a Figshare-hosted repository whose records are exposed through the public Figshare REST API (api.figshare.com) and syndicated to Research Data Australia. Student-facing systems such as timetables, the curriculum catalogue, and identity/SSO sit behind authentication and are not offered as public APIs.
 
-- APIs.json: https://raw.githubusercontent.com/api-evangelist/rmit/refs/heads/main/apis.yml
-- Run with Naftiko: https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=rmit-api-evangelist&utm_content=repo
+**Areas:** Education · Higher Education · University · Research Data · Open Access · Australia
 
-## Type
+## RMIT University on APIs.io
 
-Index / Consumer / 3rd-Party
+Everything profiled for RMIT University is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/rmit/](https://apis.io/providers/rmit/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (1)
 
-Education, Higher Education, University, Research Data, Open Access, Australia
+- [RMIT Research Repository (Esploro)](https://apis.io/apis/rmit/research-repository/) — The RMIT Research Repository is RMIT University's open access research portal, powered by Clarivate's Esploro research information management platform. It…
 
-## APIs
+### Published properties
 
-- **RMIT Research Data (Figshare REST API)** — RMIT research outputs published to a Figshare institutional repository, queryable as JSON via the shared Figshare REST API v2. Docs: https://docs.figshare.com/ — Repository: https://rmit.figshare.com/
-- **RMIT Research Repository (Esploro)** — RMIT's open access research portal on Clarivate Esploro; publicly browsable, no documented public API. Docs: https://researchrepository.rmit.edu.au/
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Plans
+#### Agentic access (1)
 
-See [plans/rmit-plans-pricing.yml](plans/rmit-plans-pricing.yml).
+Which operations an agent can call, which act, and which need a human in the loop.
 
-## Rate Limits
+- [Rmit Agentic Access](https://apis.io/agentic-access/rmit/rmit-agentic-access/)
 
-See [rate-limits/rmit-rate-limits.yml](rate-limits/rmit-rate-limits.yml).
+#### Vocabulary (1)
 
-## FinOps
+The provider's domain terms, defined.
 
-See [finops/rmit-finops.yml](finops/rmit-finops.yml).
+- [RMIT Research Data (Figshare) Vocabulary](https://apis.io/vocabularies/rmit/rmit-vocabulary/)
 
-## Timestamps
+#### Collections (10)
 
-- Created: 2026-06-03
-- Modified: 2026-06-03
+Postman and Open Collection request collections.
 
-## Common Properties
+- [Figshare altmetric API](https://apis.io/collections/rmit/open-rmit-altmetric-api/)
+- [Figshare altmetric articles API](https://apis.io/collections/rmit/open-rmit-articles-api/)
+- [Figshare altmetric authors API](https://apis.io/collections/rmit/open-rmit-authors-api/)
+- [Figshare altmetric collections API](https://apis.io/collections/rmit/open-rmit-collections-api/)
+- [Figshare altmetric institutions API](https://apis.io/collections/rmit/open-rmit-institutions-api/)
+- [Figshare altmetric oauth API](https://apis.io/collections/rmit/open-rmit-oauth-api/)
+- [Figshare altmetric other API](https://apis.io/collections/rmit/open-rmit-other-api/)
+- [Figshare altmetric profiles API](https://apis.io/collections/rmit/open-rmit-profiles-api/)
+- [Figshare altmetric projects API](https://apis.io/collections/rmit/open-rmit-projects-api/)
+- [Figshare altmetric symplectic API](https://apis.io/collections/rmit/open-rmit-symplectic-api/)
 
-- Website: https://www.rmit.edu.au/
-- GitHub: https://github.com/RMIT-University
-- LinkedIn: https://www.linkedin.com/school/rmit-university/
-- Twitter/X: https://twitter.com/RMIT
+#### Security (2)
 
-## Notes
+Authentication, trust centre, and vulnerability disclosure.
 
-All entries reflect live verification on 2026-06-03 with no fabricated endpoints. The Figshare REST API (api.figshare.com/v2) was probed and returned real RMIT research records. The Esploro Research Repository is publicly browsable but exposes no documented API or working open OAI-PMH endpoint (candidate OAI URLs returned 404 or an empty SPA shell). Timetable, curriculum catalogue, and identity/SSO systems are gated behind authentication and are not public APIs. The official RMIT GitHub org exists but currently has no public repositories. No public status page resolved at status.rmit.edu.au. The LinkedIn page returns HTTP 999 due to LinkedIn bot blocking, not because the page is missing.
+- [Rmit Domain Security](https://apis.io/security/rmit/rmit-domain-security/)
+- [Rmit Vulnerability Disclosure](https://apis.io/security/rmit/rmit-vulnerability-disclosure/)
 
-## Maintainers
+#### Plans and pricing (1)
 
-- Kin Lane — kin@apievangelist.com
+Published plans, tiers and prices.
+
+- [Rmit Plans Pricing](https://apis.io/plans/rmit/rmit-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Rmit Rate Limits](https://apis.io/rate-limits/rmit/rmit-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Rmit Finops](https://apis.io/finops/rmit/rmit-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.rmit.edu.au/)
+- [Blog](https://www.rmit.edu.au/news/all-news)
+
+## API Evangelist rating
+
+**Kin Score 11.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 7.4 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 5.3 |
+
+**Agent readiness 2.4** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/rmit/](https://apis.io/providers/rmit/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for RMIT University: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/rmit/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
